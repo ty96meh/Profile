@@ -110,7 +110,7 @@ body {
 /* Main */
 .main {
     margin-top: 2%;
-    font-size: 16px;
+    /* font-size: 16px; */
     padding: 0 15%;
     
 }
@@ -118,7 +118,7 @@ body {
 .main h2 {
     color: #333;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    /* font-size: 20px; */
     margin-bottom: 10px;
     text-align: center;
 }
