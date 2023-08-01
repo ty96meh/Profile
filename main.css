@@ -1,0 +1,24 @@
+.navbar-top {
+    background-color: #F5DF4D;
+    overflow: hidden;
+}
+
+.navbar-top a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar-top a:hover {
+    background-color: #939597;
+    color: #000;
+}
+  
+  /* Add a color to the active/current link */
+.navbar-top a.active {
+    background-color: #000;
+    color: white;
+}
