@@ -4,12 +4,12 @@
     border-radius: 15px;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-template-rows: 1fr;
 }
 
 .navbar-top a {
-    color: #000;
+    color: #343a4a;
     text-align: center;
     padding: 14px 16px;
     font-size: 17px;
@@ -17,16 +17,29 @@
 }
 
 .navbar-top a.active {
-    background-color: #000;
+    background-color: #343a4a;
+    color: white;
+}
+
+.navbar-top a.active:hover {
+    background-color: #939597;
     color: white;
 }
 
 .navbar-top a:hover {
     background-color: #939597;
-    color: #000;
+    color: #000000;
 }
+
+/* .link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+} */
   
-.navbar-top a.link-hover::after {
+.link-hover::after {
     content: "";
     position: absolute;
     z-index: 2;
@@ -49,14 +62,14 @@
       20% 20%
     );
   
-    background-color: #000000;
+    background-color: #343a4a;
   }
   
-  .navbar-top a.link-hover:hover::after {
+  .link-hover:hover::after {
     transform: translate(0, 0%) scaleY(1);
   }
   
-  .navbar-top a.link-hover::before {
+  .link-hover::before {
     content: "";
     position: absolute;
     z-index: 2;
@@ -79,10 +92,10 @@
       80% 80%
     );
   
-    background-color: #000000;
+    background-color: #343a4a;
   }
   
-  .navbar-top a.link-hover:hover::before {
+  .link-hover:hover::before {
     transform: translate(0%, 0%) scaleY(1);
   }
   
