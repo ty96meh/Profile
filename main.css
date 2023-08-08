@@ -96,3 +96,41 @@
 
 /* Grey color */
 /* background-color: #939597;*/  
+
+
+body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+  
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+/* ??????? */
+
+.intro {
+    text-align: center; 
+    background-color: #939597; 
+    columns: 500px;
+    border-radius: 15px;
+    padding: 14px 16px;
+    margin: 16px 0px;
+    padding-block-start: calc(var(--selection-padding) + 50px);
+}
+
+.intro .container{
+    grid-template-columns: 0.8fr 1fr;
+    align-items: center;
+    gap: 100px;
+}
+
+.center {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
