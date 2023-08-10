@@ -1,11 +1,14 @@
 .navbar-top {
-    background-color: #F5DF4D;
+    
     overflow: hidden;
+    background-color: #F5DF4D;
+    transition: top 0.3s; 
+    position: fixed;
     border-radius: 15px;
-    margin: 0;
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: 1fr 4fr repeat(4, 1fr);
     grid-template-rows: 1fr;
+    z-index: 99;
 }
 
 .navbar-top a {
@@ -110,27 +113,39 @@ body::-webkit-scrollbar {
 
 /* ??????? */
 
-.intro {
-    text-align: center; 
-    background-color: #939597; 
-    columns: 500px;
-    border-radius: 15px;
+.container{
+    background-color: #F5DF4D;
     padding: 14px 16px;
-    margin: 16px 0px;
-    padding-block-start: calc(var(--selection-padding) + 50px);
+    height: 90vh;
+    /* margin: ; */
+    margin-top: 16px;
+    
 }
 
-.intro .container{
-    grid-template-columns: 0.8fr 1fr;
+.intro-box {
     align-items: center;
-    gap: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+    justify-content: center;
+    text-align: center;
 }
 
-.center {
-    margin: 0;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
+.intro {
+    font-family: system-ui;
+}
+
+.intro-btn {
+    background-color: #fff;
+    width: 20%;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 15px;
+
+}
+
+.intro-btn:hover {
+    width: 1000px;
+    color: pink;
+}
+
