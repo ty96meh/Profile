@@ -25,10 +25,10 @@ body::-webkit-scrollbar {
 }
 
 .menu-container {
+    padding: 6px 0px;
     display: inline-block;
     cursor: pointer;
     float: right;
-    padding: 6px 0px;
     transition: 0.4s;
 }
 
@@ -44,7 +44,6 @@ body::-webkit-scrollbar {
 .change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
 }
-
 .change .bar2 {opacity: 0;}
 
 .change .bar3 {
@@ -90,6 +89,10 @@ body::-webkit-scrollbar {
 .nav-list a.width-adjust {
     display: none;
     
+}
+
+.nav-list a.toggleChange {
+    display: block;
 }
 
 

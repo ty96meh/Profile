@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
-    resizeFunction();  
+    resizeFunction(); 
+    scrollFunction();
+
     window.onscroll = function() {
         scrollFunction()
     };
@@ -13,34 +15,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 function resizeFunction(){
+    var menus = document.querySelectorAll(".menu-container");
     var links = document.querySelectorAll(".nav-list a");
-  
     for (var i = 0; i < links.length; i++) {
-      if (
-        window.outerWidth < 659 
-      ) {
+      if (window.outerWidth < 659) {
         links[i].classList.add("width-adjust");
+        
+        menus.forEach(function(menu) {
+          menu.style.display = 'inline-block';
+        });
       } else {
         links[i].classList.remove("width-adjust");
+        links[i].classList.remove("toggleChange");
+        menus.forEach(function(menu) {
+          menu.style.display = 'none';
+          menu.classList.remove("change");
+        });
       }
     }
+
 }
-
-function myFunction(x) {
-  x.classList.toggle("change");
-}
-
-// @media screen and (max-width: 523px) {
-//     .navbar-top {
-//         font-size: 15px;
-//         border-radius: 7.5px;
-//     }
-// }
-
-// .navbar-top a {
-//     font-size: 18px;
-//     display:block; <---- edit to change by window width
-// }
 
 
 function scrollFunction() {
@@ -68,3 +62,20 @@ function scrollFunction() {
     }
 }
 
+
+
+
+function toggleFunction(x) {
+  x.classList.toggle("change");
+  var links = document.querySelectorAll(".nav-list a");
+    if (x.classList.contains("change") ) {
+      for (var i = 0; i < links.length; i++) {
+        links[i].classList.add("toggleChange");
+      }
+    } else {
+      for (var i = 0; i < links.length; i++) {
+        links[i].classList.remove("toggleChange");
+      }
+    }
+    
+}
