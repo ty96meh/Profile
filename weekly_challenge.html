@@ -1,0 +1,178 @@
+-> Week 231 
+https://theweeklychallenge.org/blog/perl-weekly-challenge-231/
+///////////////////////////////////////////
+Task 1: Min Max
+Submitted by: Mohammad S Anwar
+You are given an array of distinct integers.
+
+Write a script to find all elements that is neither minimum nor maximum. Return -1 if you can’t.
+
+Example 1
+Input: @ints = (3, 2, 1, 4)
+Output: (3, 2)
+
+The minimum is 1 and maximum is 4 in the given array. So (3, 2) is neither min nor max.
+Example 2
+Input: @ints = (3, 1)
+Output: -1
+Example 3
+Input: @ints = (2, 1, 3)
+Output: (2)
+
+The minimum is 1 and maximum is 3 in the given array. So 2 is neither min nor max.
+///////////////////////////////////////////
+Task 2: Senior Citizens
+Submitted by: Mohammad S Anwar
+You are given a list of passenger details in the form “9999999999A1122”, where 9 denotes the phone number, A the sex, 1 the age and 2 the seat number.
+
+Write a script to return the count of all senior citizens (age >= 60).
+
+Example 1
+Input: @list = ("7868190130M7522","5303914400F9211","9273338290F4010")
+Ouput: 2
+
+The age of the passengers in the given list are 75, 92 and 40.
+So we have only 2 senior citizens.
+Example 2
+Input: @list = ("1313579440F2036","2921522980M5644")
+Ouput: 0
+
+
+
+///////////////////////////////////////////
+Task 1: Min Max
+function minMax (...elements){
+    let array = Object.values(elements);
+    
+    const min_num = Math.min(...array);
+    const max_num = Math.max(...array);
+    var result = array.filter((num) => num != min_num &&  num != max_num);
+    if (result.length == 0){
+        result = -1;
+    }
+    console.log(result);
+}
+
+minMax(3, 1);
+
+///////////////////////////////////////////
+Task 2: Senior Citizens
+function seniorCitizens (...elements){
+    var senior = 0;
+    for(value of elements){
+        const age = value.slice(-4, -2);
+        if (age >= 60){senior++}
+    }
+    console.log("Number of senior(s): " + senior);
+}
+
+seniorCitizens ("7868190130M7522","5303914400F9211","9273338290F4010");
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-> Week 226 (Owner sick in week 232, so i choose previous week's to do)
+https://theweeklychallenge.org/blog/perl-weekly-challenge-226/
+///////////////////////////////////////////
+Task 1: Shuffle String
+Submitted by: Mohammad S Anwar
+You are given a string and an array of indices of same length as string.
+
+Write a script to return the string after re-arranging the indices in the correct order.
+
+Example 1
+Input: $string = 'lacelengh', @indices = (3,2,0,5,4,8,6,7,1)
+Output: 'challenge'
+Example 2
+Input: $string = 'rulepark', @indices = (4,7,3,1,0,5,2,6)
+Output: 'perlraku'
+
+///////////////////////////////////////////
+Task 2: Zero Array
+Submitted by: Mohammad S Anwar
+You are given an array of non-negative integers, @ints.
+
+Write a script to return the minimum number of operations to make every element equal zero.
+
+In each operation, you are required to pick a positive number less than or equal to the smallest element in the array, then subtract that from each positive element in the array.
+
+
+Example 1:
+Input: @ints = (1, 5, 0, 3, 5)
+Output: 3
+
+operation 1: pick 1 => (0, 4, 0, 2, 4)
+operation 2: pick 2 => (0, 2, 0, 0, 2)
+operation 3: pick 2 => (0, 0, 0, 0, 0)
+Example 2:
+Input: @ints = (0)
+Output: 0
+Example 3:
+Input: @ints = (2, 1, 4, 0, 3)
+Output: 4
+
+operation 1: pick 1 => (1, 0, 3, 0, 2)
+operation 2: pick 1 => (0, 0, 2, 0, 1)
+operation 3: pick 1 => (0, 0, 1, 0, 0)
+operation 4: pick 1 => (0, 0, 0, 0, 0)
+
+
+///////////////////////////////////////////
+Task 1: Shuffle String
+
+function shuffleString(input_string, ...indicesArray){
+    let stringArray = Array.from(input_string);
+
+    //combine arrays:
+    let list = new Array();
+    for(i = 0; i < stringArray.length; i++){
+        list.push({'string': stringArray[i], 'indices': indicesArray[i]})
+    }
+
+    //sort
+    sortedsArray = list.sort(function (a, b) {  return a.indices - b.indices;  });
+
+    //print separated items
+    let printArray = new Array();
+    for(p = 0; p < list.length; p++){
+        printArray.push(list[p].string);
+    }
+
+    let output = printArray.toString();
+    output = output.replace(/\,/g,'');
+    console.log(output);
+}
+
+shuffleString('lacelengh', 3,2,0,5,4,8,6,7,1);
+
+
+///////////////////////////////////////////
+Task 2: Zero Array
+
+function zeroArray (...ints){
+    min_element = Math.min(...ints.filter(n => n));
+    max_element = Math.max(...ints);
+    let ops_array = new Array();
+    let total_optTime = 0;
+    let new_max = max_element;
+    let new_min = min_element;
+
+    while(new_max > 0){
+        for (let value of ints){
+            if (value > 0 ){
+                value = value - new_min;
+            }
+            ops_array.push(value); 
+        }
+        
+        ints = ops_array;
+        total_optTime++;
+        new_max = Math.max(...ops_array);
+        new_min = Math.min(...ops_array.filter(n => n));
+        ops_array = [];
+        
+    }
+    console.log(total_optTime);
+}
+
+zeroArray(1, 5, 0, 3, 5);

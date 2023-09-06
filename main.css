@@ -18,7 +18,6 @@ body::-webkit-scrollbar {
     text-align: center;
     justify-content: center;
     overflow: hidden;
-    /* overflow: visible; */
     border-radius: 15px;
     z-index: 99;
 
@@ -67,7 +66,6 @@ body::-webkit-scrollbar {
     font-size: 18px;
     padding: 14px;
     transition: 0.4s ease;
-    /* display:block; <---- edit to change by window width */
 }
 
 .navbar-top a.active {
@@ -172,12 +170,12 @@ body::-webkit-scrollbar {
 
 
 .container{
-    /* background-color: #F5DF4D; */
-    padding: 14px 16px;
-    /* height: 90vh; */
-    /* margin: ; */
-    margin-top: 16px;
+    /* background-color: #F5F5F5; */
+    background-color: #939597;  
+    Transform: translate(0, 55px);
+    border-radius: 15px;
     
+    /* width: auto; */
 }
 
 .intro-box {
