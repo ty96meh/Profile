@@ -164,6 +164,23 @@ img {
 }
 
 /* == Header & Nav == */
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--body-color);
+    z-index: var(--z-fixed);
+    transition: box-shadow 0.4s;
+}
+
+.nav{
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+
+
+}
 
 /* Navigation for mobile device */
 

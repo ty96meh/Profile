@@ -1,0 +1,36 @@
+========== HEADER ==========
+.nav__logo-circle
+M
+
+.nav__logo-name
+Maisy
+
+.nav__title
+Menu
+
+.nav__name
+Maisy
+
+.nav__link
+Home - About Me - Projects - Contact Me
+
+
+
+========== HOME ==========
+.home__name
+Maisy Chu
+
+
+
+========== HEADER ==========
+
+
+
+========== HEADER ==========
+
+
+========== HEADER ==========
+
+
+
+========== HEADER ==========
