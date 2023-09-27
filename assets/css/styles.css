@@ -201,6 +201,14 @@ img {
     place-items: center;
 }
 
+.nav__logo-circle {
+    border-radius: 50%;
+}
+
+.nav__toggle{
+    font-size: 1.25rem;
+    cursor: pointer;
+}
 
 /* Navigation for mobile device */
 
