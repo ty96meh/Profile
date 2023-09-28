@@ -290,6 +290,17 @@ img {
     color: var(--white-color);
 }
 
+.nav_link:hover::after {
+    width: 25%;
+}
+
+
+
+
+
+
+
+
 /* Show menu */
 
 /* Add shadow header */
