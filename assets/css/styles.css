@@ -267,6 +267,28 @@ img {
     row-gap: 2.5rem;
 }
 
+.nav_link {
+    position: relative;
+    color: var(--text-color-light);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    transition: color 0.3s;
+}
+
+.nav_link::after {
+    content: '';
+    width: 25%;
+    height: 2px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    transition: width 0.3s;
+}
+
+.nav_link:hover {
+    color: var(--white-color);
+}
 
 /* Show menu */
 
