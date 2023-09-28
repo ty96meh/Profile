@@ -294,7 +294,13 @@ img {
     width: 25%;
 }
 
-
+.nav__close{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
 
 
 
