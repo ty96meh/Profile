@@ -163,6 +163,7 @@ img {
     overflow: hidden; /* For animation ScrollReveal */
 }
 
+
 /* == Header & Nav == */
 .header{
     position: fixed;
@@ -212,7 +213,7 @@ img {
 
 /* Navigation for mobile device */
 @media screen and (max-width: 1150px) {
-    .nav_menu{
+    .nav__menu{
         position: fixed;
         top: -100%;
         left: 0;
