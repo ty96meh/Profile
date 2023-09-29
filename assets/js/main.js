@@ -1,3 +1,33 @@
+
+// Show Menu //
+
+// Menu Show //
+/* Validate if constant exists */ 
+
+// Menu Hidden //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Previous
 // document.addEventListener("DOMContentLoaded", function() {
 //     resizeFunction(); 
 //     scrollFunction();
