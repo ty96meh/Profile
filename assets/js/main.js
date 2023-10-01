@@ -1,6 +1,3 @@
-console.log('Attached');
-
-
 // Show Menu //
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
@@ -23,14 +20,24 @@ if(navClose){
     })
 }
 
+// Remove Menu Mobile //
+const navLink = document.querySelectorAll('.nav__link');
 
+const linkAction = () => {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction));
 
+// Shadow Header //
 
+// Email JS //
 
+// Show Scroll Up //
 
+// Scroll Sections Active Link //
 
-
-
+// Dark Mode //
 
 
 
@@ -111,19 +118,3 @@ if(navClose){
 // }
 
 
-
-
-// function toggleFunction(x) {
-//   x.classList.toggle("change");
-//   var links = document.querySelectorAll(".nav-list a");
-//     if (x.classList.contains("change") ) {
-//       for (var i = 0; i < links.length; i++) {
-//         links[i].classList.add("toggleChange");
-//       }
-//     } else {
-//       for (var i = 0; i < links.length; i++) {
-//         links[i].classList.remove("toggleChange");
-//       }
-//     }
-    
-// }
