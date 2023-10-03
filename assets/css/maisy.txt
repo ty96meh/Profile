@@ -20,7 +20,22 @@ Home - About Me - Projects - Contact Me
 .home__name
 Maisy Chu
 
+.home__perfil
+.home__image
+.home__img
+.home__shadow
+.home__arrow
+.home__line
+.geometric-box
+.home__social
+.home__social-link
 
+
+.home__info
+.home__description
+.home__scroll
+.home__scroll-box
+.home__scroll-text
 
 ========== HEADER ==========
 
