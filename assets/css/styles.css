@@ -418,15 +418,25 @@ img {
 }
 
 .home__scroll{
-    
-}
-
-.home__scroll-box{
-    
+    display: block;
+    width: max-content;
+    margin: 0 auto;
 }
 
 .home__scroll-text{
-    
+    display: none;
+}
+
+.home__scroll-box{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 /* Animation scroll icon */
