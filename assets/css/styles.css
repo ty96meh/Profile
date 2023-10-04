@@ -309,8 +309,11 @@ img {
 .show-menu{
     top: 0;
 }
-/* Add shadow header */
+/* Add shadow under the header */
+.shadow-header{
+    box-shadow: 0 1px 16px rgba(0, 0, 0, 0.12);
 
+}
 /* Active link */
 
 
@@ -467,7 +470,21 @@ img {
 /* == Button == */
 
 /* == About == */
+.about{
+    background-color: var(--container-color);
+    transition: backgroud-color 0.4s;
+}
 
+.about__container{
+    row-gap: 0;
+}
+
+.about__perfil{
+    position: relative;
+    justify-self: center;
+    margin-block: 2.5rem;
+
+}
 /* == Service == */
 
 /* == Projects == */

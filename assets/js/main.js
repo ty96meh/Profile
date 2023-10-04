@@ -3,7 +3,6 @@ const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
 const navClose = document.getElementById('nav-close');
 
-
 // Menu Show //
 /* Validate if constant exists */ 
 if(navToggle){
@@ -11,7 +10,6 @@ if(navToggle){
         navMenu.classList.add('show-menu');
     })
 }
-
 
 // Menu Hidden //
 if(navClose){
@@ -30,6 +28,14 @@ const linkAction = () => {
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
 // Shadow Header //
+const shadowHeader = () => {
+    const header = document.getElementById('header');
+    
+    this.scrollY >= 50 ? header.classList.add('shadow-header')
+                        : header.classList.remove('shadow-header')
+
+}
+window.addEventListener('scroll', shadowHeader);
 
 // Email JS //
 

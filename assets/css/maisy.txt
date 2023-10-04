@@ -29,23 +29,52 @@ Maisy Chu
 .geometric-box
 .home__social
 .home__social-link
-
-
 .home__info
 .home__description
 .home__scroll
 .home__scroll-box
 .home__scroll-text
+.scroll-header
 
-========== HEADER ==========
+========== ABOUT ==========
+.about
+.about__container
+.section__title-1
+About Me
+
+.about__perfil
+.about__image
+.about__img
+.about__shadow
+.about__line
+.about__box
+
+.about__info
+.about__description
+Passionate about creating <b>Web Pages</b> with <b>UX/UI User Interface</b>, 
+I have years of experience and my clients are happy with the projects carried out.
+
+“Never forget why you started, and your mission can be accomplished.”
+“It's easy to get started, it's always hard to keep.”
+不忘初心，方得始終。
+初心易得，始終難守。
+華嚴經 Avataṃsaka Sūtra
+
+.about__list
+.about__item
+Skills: HTML, CSS, JavaScript, PHP, JQuery, Boostrap & GitHub.
+
+.about__buttons
+Contact Me
+
+button__ghost
+
+
+========== SERVICES ==========
+
+
+========== PROJECTS ==========
 
 
 
-========== HEADER ==========
-
-
-========== HEADER ==========
-
-
-
-========== HEADER ==========
+========== FOOTER ==========
