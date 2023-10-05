@@ -60,6 +60,8 @@ I have years of experience and my clients are happy with the projects carried ou
 初心易得，始終難守。
 華嚴經 Avataṃsaka Sūtra
 
+Last year i made a mini game for job apply -> used Pantone 17-3936 Very Peri as base
+
 .about__list
 .about__item
 Skills: HTML, CSS, JavaScript, PHP, JQuery, Boostrap & GitHub.
@@ -67,10 +69,25 @@ Skills: HTML, CSS, JavaScript, PHP, JQuery, Boostrap & GitHub.
 .about__buttons
 Contact Me
 
-button__ghost
+.button__ghost
 
 
 ========== SERVICES ==========
+.services
+.services__container
+.services__card
+.services__border
+.services__content
+.services__icon
+.services__box
+.services__title
+Web Design
+
+.services__description
+Beautiful and elegant designs with interfaces that are intuitive, efficient and pleasant to use for the users.
+
+
+
 
 
 ========== PROJECTS ==========
