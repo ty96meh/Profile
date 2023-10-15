@@ -31,7 +31,7 @@
 
                     <ul class="nav__list">
                         <li class="nav__itme">
-                            <a href="#home" class="nav__link">Home</a>
+                            <a href="#home" class="nav__link active-link">Home</a>
                         </li>
 
                         <li class="nav__itme">
@@ -54,6 +54,11 @@
                 </div>
 
                 <div class="nav__buttons">
+                    <!-- theme button -->
+
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+
                     <!-- toggle btn -->
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="ri-menu-4-line"></i>
@@ -379,6 +384,9 @@
             <!-- CONTACT -->
             <section class="contact section" id="contact">
                 <div class="contact__container grid">
+
+
+
                     <div class="contact__data">
                         <h2 class="section__title-2">
                             <span>Contact Me.</span>
@@ -393,6 +401,9 @@
 
 
                     </div>
+
+
+
                     <div class="contact__mail">
                         <h2 class="contact__title">
                             Send Me A Message
@@ -418,6 +429,9 @@
                                     <textarea name="user_message" id="message" class="contact__input" required placeholder="Message"></textarea>
                                     <label for="message" class="contact__label">Message</label> 
                                 </div>
+                                
+                                <p class="contact__message" id="contact-message"></p>
+
                                 <button type="submit" class="contact__button button">
                                     <i class="ri-send-plane-line"></i> Send Message
                                 </button>
@@ -454,17 +468,10 @@
                                 <a href="https://www.linkedin.com/" target="_blank" class="contact__social-link">
                                     <i class="ri-linkedin-box-line"></i>
                                 </a>
-
-
                             </div>
-                        
                         </div>
-
-
                     </div>
                 </div>
-
-                
             </section>
 
 
@@ -479,15 +486,49 @@
 
         <!-- FOOTER -->
         <footer class="footer">
+            <div class="footer__container container grid">
+                <ul class="footer__links">
+                    <li>
+                        <a href="#about" class="footer__link">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#services" class="footer__link">Services</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#projects" class="footer__link">Projects</a>
+                    </li>
+                </ul>
 
+                <span class="footer__copy">
+                    &#169; All Rights Reserved By
+                    <a href="">Maisy</a>
+                </span>
+
+            </div>
         </footer>
 
         <!-- SCROLL UP -->
 
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-s-line"></i>
+        </a>
+
+
+
+
+
+
+
+
+
+
+
         <!-- SCROLLREVEAL -->
 
         <!-- EMAIL JS -->
-
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <!-- MAIN JS -->
         <script src="assets/js/main.js"></script>
 
