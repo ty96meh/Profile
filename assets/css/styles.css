@@ -1639,6 +1639,7 @@ body.dark-theme{
     }
 
     .contact__social-data{
+        display: flex; /* need to add flex (user agent stylesheet - div display: block) */
         flex-direction: row;
         align-items: center;
         column-gap: 1.25rem;
