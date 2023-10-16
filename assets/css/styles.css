@@ -488,7 +488,6 @@ body.dark-theme{
 }
 
 .home__social{
-    display: inline-block;
     height: max-content;
     position: absolute;
     left: -3rem;
@@ -507,6 +506,7 @@ body.dark-theme{
     display: grid;
     place-items: center;
     transition: background-color 0.3s;
+    height: fit-content;
 
     
 }
