@@ -646,9 +646,9 @@ body.dark-theme{
 
 .about__shadow{
     width: 150px;
-    height: 300px;
     /* Change box-shade height while pic/img changed */
-    /* height: 385px; */
+    height: 385px;
+    /* height: 300px; */
     background-color: var(--body-color);
     top: -2.5rem;
     right: -3.5rem;
@@ -1189,9 +1189,9 @@ body.dark-theme{
     }
     
     .about__shadow{
-        height: 270px;
         /* Change box-shade height while pic/img changed */
-        /* height: 330px; */
+        height: 330px;
+        /* height: 270px; */
         right: -2.5rem;
     }
 
