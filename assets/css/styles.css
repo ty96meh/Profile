@@ -214,7 +214,7 @@ body.dark-theme{
     position: relative;
     font-size: var(--h1-font-size);
     width: max-content;
-    width: -webkit-max-content;
+    width: max-content;
     margin: 0.75rem auto 2rem;
 }
 
@@ -489,7 +489,7 @@ body.dark-theme{
 }
 
 .home__social{
-    height: max-content;
+    height: -webkit-max-content;
     position: absolute;
     left: -3rem;
     top: 0;
