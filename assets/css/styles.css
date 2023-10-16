@@ -214,6 +214,7 @@ body.dark-theme{
     position: relative;
     font-size: var(--h1-font-size);
     width: max-content;
+    width: -webkit-max-content;
     margin: 0.75rem auto 2rem;
 }
 
