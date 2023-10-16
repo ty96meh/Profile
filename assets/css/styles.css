@@ -488,6 +488,7 @@ body.dark-theme{
 }
 
 .home__social{
+    display: inline-block;
     height: max-content;
     position: absolute;
     left: -3rem;
