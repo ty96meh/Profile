@@ -489,7 +489,7 @@ body.dark-theme{
 }
 
 .home__social{
-    height: max-content;
+    height: min-content;
     position: absolute;
     left: -3rem;
     top: 0;
@@ -500,7 +500,7 @@ body.dark-theme{
 }
 
 .home__social-link {
-    height: max-content;
+    height: min-content;
     background-color: var(--black-color-light);
     color: var(--white-color);
     font-size: 1.25rem;
