@@ -1544,7 +1544,8 @@ body.dark-theme{
     }
 
     .services__container{
-        grid-template-columns: repeat(3, 282px);
+        grid-template-columns: repeat(2, 350px);
+        /* grid-template-columns: repeat(3, 282px); <--- layout ratio for 3 columns */
         column-gap: 5rem;
         padding-block: 3rem 5rem;
     }
@@ -1574,7 +1575,8 @@ body.dark-theme{
     }
         
     .projects__container{
-        grid-template-columns: repeat(3, 352px);
+        grid-template-columns: repeat(2, 450px);
+        /* grid-template-columns: repeat(3, 352px); <--- layout ratio for 3 columns */
         padding-block: 3rem 1rem;
     }
 
